@@ -17,3 +17,13 @@ C:\Users\Jordan\Desktop\College Work\Romanvex\RomanVex (1)\RomanVex\RomanVex\obj
 C:\Users\Jordan\Desktop\College Work\Romanvex\RomanVex (1)\RomanVex\RomanVex\obj\Debug\RomanVex.exe
 C:\Users\Jordan\Desktop\College Work\Romanvex\RomanVex (1)\RomanVex\RomanVex\obj\Debug\RomanVex.pdb
 C:\Users\Jordan\Desktop\College Work\Romanvex\RomanVex (1)\RomanVex\RomanVex\obj\Debug\RomanVex.Romanvex.resources
+C:\Users\Jordan\Desktop\College Work\RomanVex\RomanVex\RomanVex\bin\Debug\RomanVex.exe.config
+C:\Users\Jordan\Desktop\College Work\RomanVex\RomanVex\RomanVex\bin\Debug\RomanVex.exe
+C:\Users\Jordan\Desktop\College Work\RomanVex\RomanVex\RomanVex\bin\Debug\RomanVex.pdb
+C:\Users\Jordan\Desktop\College Work\RomanVex\RomanVex\RomanVex\obj\Debug\RomanVex.csprojResolveAssemblyReference.cache
+C:\Users\Jordan\Desktop\College Work\RomanVex\RomanVex\RomanVex\obj\Debug\RomanVex.Romanvex.resources
+C:\Users\Jordan\Desktop\College Work\RomanVex\RomanVex\RomanVex\obj\Debug\RomanVex.Properties.Resources.resources
+C:\Users\Jordan\Desktop\College Work\RomanVex\RomanVex\RomanVex\obj\Debug\RomanVex.csproj.GenerateResource.Cache
+C:\Users\Jordan\Desktop\College Work\RomanVex\RomanVex\RomanVex\obj\Debug\RomanVex.csproj.CoreCompileInputs.cache
+C:\Users\Jordan\Desktop\College Work\RomanVex\RomanVex\RomanVex\obj\Debug\RomanVex.exe
+C:\Users\Jordan\Desktop\College Work\RomanVex\RomanVex\RomanVex\obj\Debug\RomanVex.pdb
