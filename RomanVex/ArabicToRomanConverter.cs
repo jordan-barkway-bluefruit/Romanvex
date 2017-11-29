@@ -10,11 +10,25 @@ namespace RomanVex
     {
         public static string Convert(int arabicNumeral)
         {
+            int arabicNumeralOriginal = arabicNumeral;
             string romanNumeral = "";
 
-            for ( int i = 0; i < arabicNumeral; i++)
+            if (arabicNumeral > 4)
             {
-                romanNumeral += "I";
+                romanNumeral += "V";
+                arabicNumeral -= 5;
+            }
+
+            if (arabicNumeral == 4)
+            {
+                romanNumeral += "IV";
+            }
+            else
+            {
+                for (int i = 0; i < arabicNumeral; i++)
+                {
+                    romanNumeral += "I";
+                }
             }
             return romanNumeral;
         }
