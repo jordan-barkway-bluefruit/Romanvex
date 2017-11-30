@@ -3,3 +3,8 @@
 *.ide
 *.pdb
 *.dll
+.vs/
+obj/
+debug/
+bin/
+release/
