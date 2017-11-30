@@ -28,7 +28,7 @@ namespace RomanVexTests
             Assert.AreEqual("c", ArabicToRomanConverter.Convert(100000));
             Assert.AreEqual("cd", ArabicToRomanConverter.Convert(400000));
             Assert.AreEqual("d", ArabicToRomanConverter.Convert(500000));
-
+            Assert.AreEqual("cm", ArabicToRomanConverter.Convert(900000)); 
         }
 
 
@@ -47,6 +47,7 @@ namespace RomanVexTests
             Assert.AreEqual("vMMMCMXCIX", ArabicToRomanConverter.Convert(8999));
             Assert.AreEqual("lxxxMx", ArabicToRomanConverter.Convert(89000));
             Assert.AreEqual("clxxxMx", ArabicToRomanConverter.Convert(189000));
+            Assert.AreEqual("cmxcMxCMXCIX", ArabicToRomanConverter.Convert(999999));
         }
         
         

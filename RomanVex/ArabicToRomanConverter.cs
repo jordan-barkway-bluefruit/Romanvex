@@ -42,7 +42,8 @@ namespace RomanVex
             new Numerals(90000, "xc"),
             new Numerals(100000, "c"),
             new Numerals(400000, "cd"),
-            new Numerals(500000, "d")
+            new Numerals(500000, "d"),
+            new Numerals(900000, "cm")
         };
 
         public static string Convert(int arabicNumeral)
