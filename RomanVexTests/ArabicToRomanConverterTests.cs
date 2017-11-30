@@ -114,6 +114,49 @@ namespace RomanVexTests
         {
             Assert.AreEqual("vCMXCIX", ArabicToRomanConverter.Convert(5999));
         }
+
+        [TestMethod]
+        public void When_The_Arabic_Numeral_Is_8999_Then_The_Roman_Numeral_Is_vMMMCMXCIX()
+        {
+            Assert.AreEqual("vMMMCMXCIX", ArabicToRomanConverter.Convert(8999));
+        }
+
+        [TestMethod]
+        public void When_The_Arabic_Numeral_Is_9000_Then_The_Roman_Numeral_Is_Mx()
+        {
+            Assert.AreEqual("Mx", ArabicToRomanConverter.Convert(9000));
+        }
+
+        [TestMethod]
+        public void When_The_Arabic_Numeral_Is_10000_Then_The_Roman_Numeral_Is_x()
+        {
+            Assert.AreEqual("x", ArabicToRomanConverter.Convert(10000));
+        }
+
+        [TestMethod]
+        public void When_The_Arabic_Numeral_Is_40000_Then_The_Roman_Numeral_Is_xl()
+        {
+            Assert.AreEqual("xl", ArabicToRomanConverter.Convert(40000));
+        }
+
+        [TestMethod]
+        public void When_The_Arabic_Numeral_Is_50000_Then_The_Roman_Numeral_Is_l()
+        {
+            Assert.AreEqual("l", ArabicToRomanConverter.Convert(50000));
+        }
+
+        [TestMethod]
+        public void When_The_Arabic_Numeral_Is_89000_Then_The_Roman_Numeral_Is_lxxxMx()
+        {
+            Assert.AreEqual("lxxxMx", ArabicToRomanConverter.Convert(89000));
+        }
+
+        [TestMethod]
+        public void When_The_Arabic_Numeral_Is_90000_Then_The_Roman_Numeral_Is_xc()
+        {
+            Assert.AreEqual("xc", ArabicToRomanConverter.Convert(90000));
+        }
+
     }
 }
 

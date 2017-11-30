@@ -8,94 +8,23 @@ namespace RomanVex
 {
     public class ArabicToRomanConverter
     {
+
+        private static readonly int[] arabicNumeralList = { 1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000, 4000, 5000, 9000, 10000, 40000, 50000, 90000};
+        private static readonly string[] romanNumeralList = { "I", "IV", "V", "IX", "X", "XL", "L", "XC", "C", "CD", "D", "CM", "M", "Mv", "v", "Mx", "x", "xl", "l", "xc" };
+
         public static string Convert(int arabicNumeral)
         {
             int arabicNumeralOriginal = arabicNumeral;
             string romanNumeral = "";
 
-            if (arabicNumeral >= 5000)
+            for (int i = 1; i <= arabicNumeralList.Length; i++)
             {
-                romanNumeral += "v";
-                arabicNumeral -= 5000;
-            }
-
-            while(arabicNumeral >= 1000)
-            {
-                romanNumeral += "M";
-                arabicNumeral -= 1000;
-            }
-
-            if (arabicNumeral >= 900)
-            {
-                romanNumeral += "CM";
-                arabicNumeral -= 900;
-            }
-
-            if (arabicNumeral >= 500)
-            {
-                romanNumeral += "D";
-                arabicNumeral -= 500;
-            }
-
-            if (arabicNumeral >= 400)
-            {
-                romanNumeral += "CD";
-                arabicNumeral -= 400;
-            }
-
-            while (arabicNumeral >= 100)
-            {
-                romanNumeral += "C";
-                arabicNumeral -= 100;
-            }
-
-            if (arabicNumeral >= 90)
-            {
-                romanNumeral += "XC";
-                arabicNumeral -= 90;
-            }
-
-            if (arabicNumeral >= 50)
-            {
-                romanNumeral += "L";
-                arabicNumeral -= 50;
-            }
-
-            if (arabicNumeral >= 40)
-            {
-                romanNumeral += "XL";
-                arabicNumeral -= 40;
-            }
-
-            while (arabicNumeral >= 10)
-            {
-                romanNumeral += "X";
-                arabicNumeral -= 10;
-            }
-
-            if (arabicNumeral == 9)
-            {
-                romanNumeral += "IX";
-                arabicNumeral -= 9;
-            }
-
-            if (arabicNumeral > 4)
-            {
-                romanNumeral += "V";
-                arabicNumeral -= 5;
-            }
-            
-            if (arabicNumeral == 4)
-            {
-                romanNumeral += "IV";
-                arabicNumeral -= 4;
-            }
-            
-            while (arabicNumeral >= 1)
-            {
-                romanNumeral += "I";
-                arabicNumeral -= 1;
-            }            
+                while (arabicNumeral >= arabicNumeralList[arabicNumeralList.Length - i])
+                {
+                    romanNumeral += romanNumeralList[romanNumeralList.Length - i];
+                    arabicNumeral -= arabicNumeralList[arabicNumeralList.Length - i];
+                }
+            }        
             return romanNumeral;
         }
     }
