@@ -84,6 +84,36 @@ namespace RomanVexTests
         {
             Assert.AreEqual("CD", ArabicToRomanConverter.Convert(400));
         }
+
+        [TestMethod]
+        public void When_The_Arabic_Numeral_Is_800_Then_The_Roman_Numeral_Is_DCCC()
+        {
+            Assert.AreEqual("DCCC", ArabicToRomanConverter.Convert(800));
+        }
+
+        [TestMethod]
+        public void When_The_Arabic_Numeral_Is_900_Then_The_Roman_Numeral_Is_CM()
+        {
+            Assert.AreEqual("CM", ArabicToRomanConverter.Convert(900));
+        }
+
+        [TestMethod]
+        public void When_The_Arabic_Numeral_Is_3200_Then_The_Roman_Numeral_Is_MMMCC()
+        {
+            Assert.AreEqual("MMMCC", ArabicToRomanConverter.Convert(3200));
+        }
+
+        [TestMethod]
+        public void When_The_Arabic_Numeral_Is_5000_Then_The_Roman_Numeral_Is_v()
+        {
+            Assert.AreEqual("v", ArabicToRomanConverter.Convert(5000));
+        }
+
+        [TestMethod]
+        public void When_The_Arabic_Numeral_Is_5999_Then_The_Roman_Numeral_Is_vCMXCIX()
+        {
+            Assert.AreEqual("vCMXCIX", ArabicToRomanConverter.Convert(5999));
+        }
     }
 }
 
