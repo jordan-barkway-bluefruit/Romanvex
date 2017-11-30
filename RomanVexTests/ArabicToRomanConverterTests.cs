@@ -30,8 +30,7 @@ namespace RomanVexTests
             Assert.AreEqual("d", ArabicToRomanConverter.Convert(500000));
             Assert.AreEqual("cm", ArabicToRomanConverter.Convert(900000)); 
         }
-
-
+        
         [TestMethod]
         public void When_The_Arabic_Numeral_Is_Obscure_Random_Then_The_Roman_Numeral_Matches()
         {
@@ -49,9 +48,6 @@ namespace RomanVexTests
             Assert.AreEqual("clxxxMx", ArabicToRomanConverter.Convert(189000));
             Assert.AreEqual("cmxcMxCMXCIX", ArabicToRomanConverter.Convert(999999));
         }
-        
-        
-
     }
 }
 

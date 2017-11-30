@@ -28,24 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.guidanceLabel = new System.Windows.Forms.Label();
             this.userNameLabel = new System.Windows.Forms.Label();
             this.userNameField = new System.Windows.Forms.TextBox();
             this.radixNumeralLabel = new System.Windows.Forms.Label();
-            this.radixNumberField = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.saveButton = new System.Windows.Forms.Button();
+            this.base10NumberField = new System.Windows.Forms.TextBox();
+            this.romanNumeralOutputTextBox = new System.Windows.Forms.TextBox();
             this.convertButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // guidanceLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(231, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Convert Base 10 Numbers To Roman Numerals";
+            this.guidanceLabel.AutoSize = true;
+            this.guidanceLabel.Location = new System.Drawing.Point(13, 13);
+            this.guidanceLabel.Name = "guidanceLabel";
+            this.guidanceLabel.Size = new System.Drawing.Size(231, 13);
+            this.guidanceLabel.TabIndex = 0;
+            this.guidanceLabel.Text = "Convert Base 10 Numbers To Roman Numerals";
             // 
             // userNameLabel
             // 
@@ -76,28 +75,20 @@
             // 
             // radixNumberField
             // 
-            this.radixNumberField.Location = new System.Drawing.Point(126, 80);
-            this.radixNumberField.Name = "radixNumberField";
-            this.radixNumberField.Size = new System.Drawing.Size(100, 20);
-            this.radixNumberField.TabIndex = 4;
-            this.radixNumberField.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.base10NumberField.Location = new System.Drawing.Point(126, 80);
+            this.base10NumberField.Name = "radixNumberField";
+            this.base10NumberField.Size = new System.Drawing.Size(100, 20);
+            this.base10NumberField.TabIndex = 4;
+            this.base10NumberField.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // textBox3
+            // romanNumeralOutputTextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(126, 113);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 6;
-            // 
-            // saveButton
-            // 
-            this.saveButton.Location = new System.Drawing.Point(16, 155);
-            this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(75, 23);
-            this.saveButton.TabIndex = 7;
-            this.saveButton.Text = "Save";
-            this.saveButton.UseVisualStyleBackColor = true;
+            this.romanNumeralOutputTextBox.Location = new System.Drawing.Point(126, 113);
+            this.romanNumeralOutputTextBox.Name = "romanNumeralOutputTextBox";
+            this.romanNumeralOutputTextBox.ReadOnly = true;
+            this.romanNumeralOutputTextBox.Size = new System.Drawing.Size(100, 20);
+            this.romanNumeralOutputTextBox.TabIndex = 6;
+            this.romanNumeralOutputTextBox.TextChanged += new System.EventHandler(this.romanNumeralOutputTextBox_TextChanged);
             // 
             // convertButton
             // 
@@ -115,15 +106,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(332, 211);
             this.Controls.Add(this.convertButton);
-            this.Controls.Add(this.saveButton);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.radixNumberField);
+            this.Controls.Add(this.romanNumeralOutputTextBox);
+            this.Controls.Add(this.base10NumberField);
             this.Controls.Add(this.radixNumeralLabel);
             this.Controls.Add(this.userNameField);
             this.Controls.Add(this.userNameLabel);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.guidanceLabel);
             this.Name = "Romanvex";
             this.Text = "RomanVex";
+            this.Load += new System.EventHandler(this.Romanvex_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,13 +122,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label guidanceLabel;
         private System.Windows.Forms.Label userNameLabel;
         private System.Windows.Forms.TextBox userNameField;
         private System.Windows.Forms.Label radixNumeralLabel;
-        private System.Windows.Forms.TextBox radixNumberField;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button saveButton;
+        private System.Windows.Forms.TextBox base10NumberField;
+        private System.Windows.Forms.TextBox romanNumeralOutputTextBox;
         private System.Windows.Forms.Button convertButton;
     }
 }
