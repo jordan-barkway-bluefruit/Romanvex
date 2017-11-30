@@ -13,6 +13,24 @@ namespace RomanVex
             int arabicNumeralOriginal = arabicNumeral;
             string romanNumeral = "";
 
+            if (arabicNumeral >= 400)
+            {
+                romanNumeral += "CD";
+                arabicNumeral -= 400;
+            }
+
+            while (arabicNumeral >= 100)
+            {
+                romanNumeral += "C";
+                arabicNumeral -= 100;
+            }
+
+            if (arabicNumeral >= 90)
+            {
+                romanNumeral += "XC";
+                arabicNumeral -= 90;
+            }
+
             if (arabicNumeral >= 50)
             {
                 romanNumeral += "L";
